@@ -1,0 +1,70 @@
+@mixin indent-x-y($type, $value, $direction) {
+    @if($direction == x) {
+        #{$type}-left: $value * 1px;
+        #{$type}-right: $value * 1px;
+    } @else {
+        #{$type}-top: $value * 1px;
+        #{$type}-bottom: $value * 1px;
+    }
+}
+
+@mixin indent-side($type, $value, $side) {
+    #{$type}-#{$side}: $value * 1px;
+}
+
+@mixin max-width($value) {
+    max-width: $value * 1px;
+}
+
+.my-0 {
+    @include indent-x-y(margin, 0, y)
+}
+
+.mx-0 {
+    @include indent-x-y(margin, 0, x)
+}
+
+.my-200 {
+    @include indent-x-y(margin, 200, y);
+}
+.mr-24 {
+    @include indent-side(margin, 24, right);
+}
+.mt-25 {
+    @include indent-side(margin, 25, top);
+}
+
+.mr-90 {
+    @include indent-side(margin, 90, right);
+}
+
+.max-width-570 {
+    @include max-width(570);
+}
+
+.ms-16 {
+    @include indent-side(margin, 16, left)
+}
+
+.py-5 {
+    @include indent-x-y(padding, 5, y);
+}
+
+.pt-25 {
+    @include indent-side(padding, 25, top);
+}
+.px-10 {
+    @include indent-x-y(padding, 10, x);
+}
+
+.ps-20 {
+    @include indent-side(padding, 20, left);
+}
+
+.ml-1-5rem {
+    margin-left: 1.5rem;
+}
+
+.mb-1-5rem {
+    margin-bottom: 1.5rem;
+}

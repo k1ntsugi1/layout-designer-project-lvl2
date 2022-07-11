@@ -1,0 +1,23 @@
+{
+  "name": "h",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/k1ntsugi1/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/k1ntsugi1/layout-designer-project-lvl2/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1ntsugi1/layout-designer-project-lvl2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k1ntsugi1/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/k1ntsugi1/layout-designer-project-lvl2#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint-config-standard": "^26.0.0"
+  }
+}
