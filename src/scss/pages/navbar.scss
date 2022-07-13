@@ -1,0 +1,32 @@
+#navbar {
+    gap: 20px;
+    color: $color-white;
+
+    .logo-container {
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .logo-container::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: -36px;
+        background: url(../images/logo.svg);
+        background-size: cover;
+    }
+
+
+    .search-form {
+        #search-nav-field {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 50px;
+            background-color: $color-dark;
+
+        }
+    }
+
+}

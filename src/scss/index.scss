@@ -1,3 +1,15 @@
-@import "variables", "general";
+@import "./default/colors", "./default/fontSizes";  
+@import "./default/marginPadding", "./default/flexValues";
+@import "background", "general";
 
+@import "body";
+
+@import "./pages/navbar", "./pages/pageDescription";
+@import "./pages/pagePricing";
+@import "./pages/pageNews";
+@import "./pages/pageApp";
+@import "./pages/pageFooter";
+
+@import "./pages/pagePopularTrack";
+@import "media";
 

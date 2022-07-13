@@ -1,0 +1,56 @@
+
+@mixin background($color: "", $url: "") {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    @if ($color  !="") {
+        background: $color;
+    }
+
+    @if ($url  !="") {
+        background: url($url);
+    }
+
+    background-size: cover;
+    background-position: center;
+}
+
+.main::before {
+    @include background("", "../images/banner.png");
+}
+
+.artist {
+    @include background("", "../images/Morten Harket.png");
+}
+
+.free-subscribe::before {
+    @include background("", "../images/subscribe_1.png");
+    border-radius: 1rem;
+}
+
+.standart-subscribe::before {
+    @include background("", "../images/subscribe_2.png");
+    border-radius: 1rem;
+}
+
+.premium-subscribe::before {
+    @include background("", "../images/subscribe_3.png");
+    border-radius: 1rem;
+}
+
+#page-footer::before {
+    @include background(linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%), "");
+}
+
+.bg-orange {
+    background-color: $color-orange;
+}
+
+.bg-purple {
+    background-color: $color-purple;
+}

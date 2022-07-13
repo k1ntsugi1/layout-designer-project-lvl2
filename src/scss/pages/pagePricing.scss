@@ -1,0 +1,30 @@
+#page-pricing {
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 50px;
+
+        .card-item {
+            padding: 0 1.5rem 0 1.5rem;
+            position: relative;
+            min-width: 300px;
+            width: 30%;
+            display: inline-block;
+            box-sizing: border-box;
+            color: $color-white;
+
+            .pricing-value {
+                
+                .value {
+                    line-height: 1em;
+                }
+            }
+            .btn {
+                display: block;
+                width: auto;
+            }
+        }
+    }
+}

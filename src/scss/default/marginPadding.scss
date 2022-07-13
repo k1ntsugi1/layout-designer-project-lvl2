@@ -1,0 +1,126 @@
+@mixin indent-x-y($type, $value, $direction) {
+    @if($direction == x) {
+        #{$type}-left: $value * 1px;
+        #{$type}-right: $value * 1px;
+    } @else {
+        #{$type}-top: $value * 1px;
+        #{$type}-bottom: $value * 1px;
+    }
+}
+
+@mixin indent-side($type, $value, $side) {
+    #{$type}-#{$side}: $value * 1px;
+}
+
+@mixin max-width($value) {
+    max-width: $value * 1px;
+}
+
+.my-200 {
+    @include indent-x-y(margin, 200, y);
+}
+.my-100 {
+    @include indent-x-y(margin, 100, y);
+}
+.my-64 {
+    @include indent-x-y(margin, 64, y);
+}
+.my-40 {
+    @include indent-x-y(margin, 40, y);
+}
+.my-0 {
+    @include indent-x-y(margin, 0, y)
+}
+.mt-100 {
+    @include indent-side(margin, 65, top);
+}
+.mt-40 {
+    @include indent-side(margin, 40, top);
+}
+.mt-25 {
+    @include indent-side(margin, 25, top);
+}
+.mb-48 {
+    @include indent-side(margin, 48, bottom);
+}
+.mb-56 {
+    @include indent-side(margin, 56, bottom);
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+.mx-40 {
+    @include indent-x-y(margin, 40, x);
+}
+.mx-0 {
+    @include indent-x-y(margin, 0, x)
+}
+.mr-90 {
+    @include indent-side(margin, 90, right);
+}
+.mr-24 {
+    @include indent-side(margin, 24, right);
+}
+.ms-16 {
+    @include indent-side(margin, 16, left)
+}
+
+.ml-36 {
+    @include indent-side(margin, 36, left)
+}
+
+
+.py-100 {
+    @include indent-x-y(padding, 100, y);
+}
+
+.py-5 {
+    @include indent-x-y(padding, 5, y);
+}
+.pt-100 {
+    @include indent-side(padding, 100, top);
+}
+.pt-25 {
+    @include indent-side(padding, 25, top);
+}
+.pb-48 {
+    @include indent-side(padding, 48, bottom);
+}
+
+.px-auto {
+    padding-left: auto;
+    padding-right: auto
+}
+.px-40 {
+    @include indent-x-y(padding, 40, x);
+}
+.px-16 {
+    @include indent-x-y(padding, 16, x);
+}
+.px-10 {
+    @include indent-x-y(padding, 10, x);
+}
+.ps-20 {
+    @include indent-side(padding, 20, left);
+}
+.max-width-570 {
+    @include max-width(570);
+}
+.pb-62 {
+    padding-bottom: 62px;
+}
+
+
+
+.ml-1-5rem {
+    margin-left: 1.5rem;
+}
+
+.mb-1-5rem {
+    margin-bottom: 1.5rem;
+}
+
+.mt-200 {
+    margin-top: 200px;
+}

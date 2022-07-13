@@ -1,0 +1,31 @@
+#page-footer {
+    position: relative;
+    border-bottom: 1px solid $color-dark;
+    .info-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        border-bottom: 2px solid $color-grey;
+
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .link {
+                text-transform: none;
+            }
+        }
+    }
+    .additional-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .additional-info-item {
+            margin-right: 16px;
+        }
+    }
+
+}

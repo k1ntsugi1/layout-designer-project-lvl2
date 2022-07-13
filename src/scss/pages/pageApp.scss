@@ -1,0 +1,26 @@
+#page-app {
+    .mobile-description {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .description {
+            min-width: 333px;
+            width: 50%;
+            text-align: start;
+
+            .btn {
+                display: inline-block;
+                padding: 16px 40px 16px 40px;
+                border-radius: 32px;
+            }
+        }
+
+    }
+
+    .img-phones {
+        width: 333px;
+    }
+}

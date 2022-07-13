@@ -1,0 +1,28 @@
+#page-popular-track {
+    .track-main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 25px;
+        .track-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            flex-grow: 1;
+            .track-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 20px;
+                flex-grow: 1;
+                .track-description {
+                    align-self: center;
+                    flex-grow: 10;
+                }
+            }
+        }
+    }
+
+}

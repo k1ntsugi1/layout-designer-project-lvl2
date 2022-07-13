@@ -1,0 +1,197 @@
+$breakpoints: (
+    large: 2000px,
+    medium: 900px,
+    small: 610px,
+);
+
+$headline-weight: bold;
+$headline-text-transform: uppercase;
+
+@mixin valuesOfheadlines($typeOfDevice, $headline: h1) {
+    @if ($typeOfDevice ==desc and $headline ==h1) {
+        font-size: $desc-h1-fs;
+        line-height: $desc-h1-line-height;
+    }
+
+    @if ($typeOfDevice ==desc and $headline ==h2) {
+        font-size: $desc-h2-fs;
+        line-height: $desc-h2-line-height;
+    }
+
+    @if ($typeOfDevice ==desc and $headline ==h3) {
+        font-size: $desc-h3-fs;
+        line-height: $desc-h3-line-height;
+    }
+
+    @if ($typeOfDevice ==desc and $headline ==h4) {
+        font-size: $desc-h4-fs;
+        line-height: $desc-h4-line-height;
+    }
+
+    @if ($typeOfDevice ==mobile and $headline ==h1) {
+        font-size: $desc-h1-fs/2;
+        line-height: $desc-h1-line-height/2;
+    }
+
+    @if ($typeOfDevice ==mobile and $headline ==h2) {
+        font-size: $desc-h2-fs - 20;
+        line-height: $desc-h2-line-height - 20;
+    }
+
+    @if ($typeOfDevice ==mobile and $headline ==h3) {
+        font-size: $desc-h3-fs - 8;
+        line-height: $desc-h3-line-height - 21;
+    }
+
+    @if ($typeOfDevice ==mobile and $headline ==h4) {
+        font-size: $desc-h4-fs;
+        line-height: $desc-h4-line-height - 3;
+    }
+}
+
+
+@mixin media($type) {
+    @media screen and (max-width: map-get($breakpoints, "#{$type}")) {
+        @content;
+    }
+}
+
+@include media(large) {
+    #face {
+        position: relative;
+        border-bottom: 1px solid $color-dark
+    }
+
+    .h1 {
+        @include valuesOfheadlines(desc);
+    }
+
+    .h2 {
+        @include valuesOfheadlines(desc, h2);
+    }
+
+    .h3 {
+        @include valuesOfheadlines(desc, h3);
+    }
+
+    .h4 {
+        @include valuesOfheadlines(desc, h4);
+    }
+
+    .h1,
+    .h2 {
+        font-weight: $headline-weight;
+        text-transform: $headline-text-transform;
+        color: $color-white;
+    }
+}
+
+@include media(medium) {
+    #face {
+        #navbar {
+            flex-direction: column;
+
+            .nav-links {
+                flex-direction: column;
+                padding: 0 0 18px 0;
+
+                .logo-container {
+                    padding: 0 0 17px 0;
+                }
+            }
+        }
+    }
+
+    #page-pricing {
+        .cards-container {
+            .card-item {
+                min-width: 45%;
+            }
+        }
+    }
+
+
+    #page-app {
+        .mobile-description {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .description {
+                width: 100%;
+            }
+        }
+    }
+
+    .img-container {
+        .img-item {
+            max-width: 137px;
+            .fluid-img {
+                height: 137px;
+                width: 137px;
+            }
+        }
+    }
+
+    #face,
+    #page-popular-track,
+    #page-discography,
+    #page-similar {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@include media(small) {
+    .h1 {
+        @include valuesOfheadlines(mobile);
+    }
+
+    .h2 {
+        @include valuesOfheadlines(mobile, h2);
+    }
+
+    .h3 {
+        @include valuesOfheadlines(mobile, h3);
+    }
+
+    .h4 {
+        @include valuesOfheadlines(mobile, h4);
+    }
+
+    #face {
+        #page-description {
+            .btn {
+                max-width: 270px;
+            }
+        }
+    }
+
+    #page-pricing {
+        .cards-container {
+            .card-item {
+                min-width: 80%;
+            }
+        }
+    }
+
+    #page-footer {
+        .info-footer,
+        .additional-info {
+            flex-direction: column;
+        }
+    }
+
+    #page-pricing,
+    #page-news,
+    #page-app,
+    #page-footer,
+    #page-popular-track,
+    #page-discography {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

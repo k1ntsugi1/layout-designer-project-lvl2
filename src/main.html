@@ -10,35 +10,38 @@
 </head>
 
 <body>
-    <section id="face">
-        <div class="pt-25 nav">
-            <div class="nav-links">
+    <section id="face" class="main container">
+        <section id="navbar" class="pt-25 d-flex flex-row justify-content-between flex-wrap">
+            <div class="nav-links d-flex flex-row justify-content-between flex-nowrap flex-grow-1">
                 <a href="#" class="ml-36 mr-90 link logo-container">music box</a>
                 <a href="#" class="mr-24 link">главная</a>
                 <a href="#" class="mr-24 link">каталог</a>
                 <a href="#" class="mr-24 link">исполнители</a>
                 <a href="#" class="mr-24 link">контакты</a>
             </div>
-            <form class="search-form">
+            <form class="search-form flex-grow-1">
                 <input type="text" id="search-nav-field" placeholder=" ПОИСК..." aria-label="введите исполнителя"
-                    class="py-5 px-10 search-field box-shadow-success">
+                    class="py-5 px-10 box-shadow-success">
                 <input type="submit" class="display-none" aria-label="поиск исполнителя">
             </form>
-        </div>
+        </section>
 
-        <div id="page-description" class="my-200 text-center banner ">
+        <section id="page-description"
+            class="my-200 d-flex flex-column justify-content-center align-items-center text-center">
             <h1 class="h1 my-0">онлайн музыка где угодно</h1>
             <h2 class="h2 my-0">без ограничений</h2>
             <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-            <form class="login-form">
-                <input type="text" id="name-field" class="login-field box-shadow-success" placeholder="Имя" aria-label="введите имя пользователя">
-                <input type="email" id="email-field" class="login-field box-shadow-success" placeholder="Email" aria-label="введите почту пользователя">
-                <button type="submit" class="btn btn-success btn-login-form">получить доступ</button>
+            <form class="form-description d-flex flex-row flex-wrap justify-content-center">
+                <input type="text" id="name-field" class="login-field box-shadow-success" placeholder="Имя"
+                    aria-label="введите имя пользователя">
+                <input type="email" id="email-field" class="login-field box-shadow-success" placeholder="Email"
+                    aria-label="введите почту пользователя">
+                <button type="submit" class="w-100perc btn btn-success">получить доступ</button>
             </form>
-        </div>
+        </section>
     </section>
 
-    <section id="page-pricing" class="mx-40 pt-100 text-center">
+    <section id="page-pricing" class="pt-100 container text-center">
         <h2 class="h2">формы подписки</h2>
         <div class="cards-container">
 
@@ -84,8 +87,8 @@
                     скачать все композиции на ваше устройство и слушать музыку без подключения к интернету
                 </p>
     </section>
-    
-    <section id="page-news" class="mx-40 pt-100 text-center">
+
+    <section id="page-news" class="pt-100 container text-center">
         <h2 class="h2">последние новости</h2>
         <div class="news-container">
             <article class="news-item">
@@ -110,7 +113,8 @@
                 <div class="news-value">
                     <div class="news-body">
                         <h3 class="h3 color-white">Ordinary Man</h3>
-                        <p class="fs-1">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе
+                        <p class="fs-1">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man.
+                            Слушайте в числе
                             первых на Music Box</p>
                     </div>
                     <div class="news-footer fs-1">
@@ -124,7 +128,7 @@
             </article>
     </section>
 
-    <section id="page-app" class="mx-40 py-100 text-center">
+    <section id="page-app" class="py-100 container text-center">
         <h2 class="h2">мобильное приложение</h2>
         <div class="mobile-description">
             <div class="description">
@@ -142,8 +146,8 @@
         </div>
     </section>
 
-    <section id="page-footer" class="py-100">
-        <div class="px-40 pb-62 info-footer">
+    <section id="page-footer" class="py-100 container">
+        <div class="pb-62 info-footer">
             <div class="footer-item color-white">
                 <h2 class="h4 fw-normal">о нас</h2>
                 <a href="#" class="link fs-1">История компании</a>
@@ -182,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-40 px-40 additional-info">
+        <div class="my-40 additional-info">
             <span class="additional-info-item">Магазин</span>
             <span class="additional-info-item">Обслуживание</span>
             <span class="additional-info-item">Блог</span>

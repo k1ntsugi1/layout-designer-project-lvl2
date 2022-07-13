@@ -1,0 +1,50 @@
+@mixin logoImg($url) {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -36px;
+    background: url($url);
+    background-size: cover;
+    filter: invert(1);
+}
+
+#page-description {
+    .form-description {
+        max-width: 570px;
+        gap: 1.5rem;
+
+        .login-field {
+            display: inline;
+            padding-left: 20px;
+            min-width: 270px;
+            min-height: 50px;
+            box-sizing: border-box;
+            border: 2px solid $color-grey;
+            border-radius: 3px;
+            background: none;
+            color: $color-white;
+        }
+
+        .login-field::placeholder {
+            color: $color-white;
+        }
+
+        .btn-logo {
+            width: 200px;
+            border: none;
+            .logo {
+                position: relative;
+            }
+            .logo-play::before {
+                @include logoImg("../images/play-button.svg")
+            }
+            .logo-heart::before {
+                @include logoImg("../images/heart.svg")
+    
+            }
+        }
+        
+    }
+
+}
