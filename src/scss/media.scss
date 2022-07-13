@@ -105,7 +105,7 @@ $headline-text-transform: uppercase;
     #page-pricing {
         .cards-container {
             .card-item {
-                min-width: 45%;
+                min-width: 50%;
             }
         }
     }
@@ -133,9 +133,13 @@ $headline-text-transform: uppercase;
     }
 
     #face,
+    #page-pricing,
+    #page-news,
     #page-popular-track,
+    #page-app,
     #page-discography,
-    #page-similar {
+    #page-similar,
+    #page-footer {
         margin-left: 0;
         margin-right: 0;
         padding-left: 20px;
@@ -171,7 +175,7 @@ $headline-text-transform: uppercase;
     #page-pricing {
         .cards-container {
             .card-item {
-                min-width: 80%;
+                min-width: 65%;
             }
         }
     }

@@ -32,7 +32,7 @@
     @include indent-x-y(margin, 0, y)
 }
 .mt-100 {
-    @include indent-side(margin, 65, top);
+    @include indent-side(margin, 100, top);
 }
 .mt-40 {
     @include indent-side(margin, 40, top);
