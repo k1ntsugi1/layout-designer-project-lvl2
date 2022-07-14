@@ -34,17 +34,35 @@
 .mt-100 {
     @include indent-side(margin, 100, top);
 }
+.mt-18 {
+    @include indent-side(margin, 18, top);
+}
+.mt-0 {
+    @include indent-side(margin, 0, top);
+}
 .mt-40 {
     @include indent-side(margin, 40, top);
 }
 .mt-25 {
     @include indent-side(margin, 25, top);
 }
+.mt-16 {
+    @include indent-side(margin, 16, top);
+}
+.mb-40 {
+    @include indent-side(margin, 40, bottom);
+}
+.mb-45 {
+    @include indent-side(margin, 45, bottom);
+}
 .mb-48 {
     @include indent-side(margin, 48, bottom);
 }
 .mb-56 {
     @include indent-side(margin, 56, bottom);
+}
+.mb-0 {
+    @include indent-side(margin, 0, bottom);
 }
 .mx-auto {
     margin-left: auto;
@@ -62,6 +80,9 @@
 .mr-24 {
     @include indent-side(margin, 24, right);
 }
+.mr-16 {
+    @include indent-side(margin, 16, right)
+}
 .ms-16 {
     @include indent-side(margin, 16, left)
 }
@@ -70,7 +91,9 @@
     @include indent-side(margin, 36, left)
 }
 
-
+.py-200 {
+    @include indent-x-y(padding, 200, y);
+}
 .py-100 {
     @include indent-x-y(padding, 100, y);
 }
@@ -111,7 +134,9 @@
     padding-bottom: 62px;
 }
 
-
+.pb-72 {
+    @include indent-side(padding, 72, bottom);
+}
 
 .ml-1-5rem {
     margin-left: 1.5rem;
@@ -123,4 +148,8 @@
 
 .mt-200 {
     margin-top: 200px;
+}
+
+.mt-31 {
+    margin-top: 31px;
 }

@@ -1,6 +1,5 @@
 #page-app {
     .mobile-description {
-        margin-top: 64px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -12,9 +11,10 @@
             text-align: start;
 
             .btn {
-                display: inline-block;
                 padding: 16px 40px 16px 40px;
+                display: inline-block;
                 border-radius: 32px;
+                text-transform: none;
             }
         }
 

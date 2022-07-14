@@ -7,16 +7,19 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 40px;
         border-bottom: 2px solid $color-grey;
 
         .footer-item {
+            width: 270px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-
+            
             .link {
                 text-transform: none;
+            }
+            .social-link {
+                text-decoration: none;
             }
         }
     }
@@ -26,6 +29,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         .additional-info-item {
+            font-size: 16px;
             margin-right: 16px;
         }
     }

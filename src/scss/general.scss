@@ -1,10 +1,12 @@
-.img-container {
-    row-gap: 50px;
-    column-gap: 25px;
-    .img-item {
-        .fluid-img {
-            height: 250px;
-            width: 250px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 250px));
+    grid-template-rows: auto;
+    row-gap: 25px;
+    column-gap: 50px;
+    .grid-item {
+        .grid-img {
+            width: 100%;
         }
     }
 } 
@@ -77,9 +79,9 @@
 }
 
 .link {
-    color: $color-white;
     text-decoration: none;
     text-transform: uppercase;
+    color: $color-grey;
     cursor: pointer;
 }
 
@@ -95,6 +97,7 @@
 
 
 .container {
-    padding: 0 120px 0 120px;
+    padding-left: 120px;
+    padding-right: 120px;
     box-sizing: border-box;
 }

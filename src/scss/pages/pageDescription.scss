@@ -3,7 +3,7 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    left: -36px;
+    left: 0;
     background: url($url);
     background-size: cover;
     filter: invert(1);
@@ -33,7 +33,9 @@
         .btn-logo {
             width: 200px;
             border: none;
+            text-align: start;
             .logo {
+                padding-left: 36px;
                 position: relative;
             }
             .logo-play::before {

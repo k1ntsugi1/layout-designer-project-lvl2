@@ -1,26 +1,35 @@
 #navbar {
-    gap: 20px;
-    color: $color-white;
-
-    .logo-container {
-        position: relative;
-        white-space: nowrap;
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    right: 120px;
+    .nav-links {
+        .link {
+            font-size: 11px;
+            line-height: 16px;
+        }
+        .logo-container {
+            position: relative;
+            white-space: nowrap;
+        }
+    
+        .logo-container::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: -4px;
+            left: -36px;
+            background: url(../images/logo.svg);
+            background-size: cover;
+        }
     }
-
-    .logo-container::before {
-        content: '';
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        left: -36px;
-        background: url(../images/logo.svg);
-        background-size: cover;
-    }
+    
 
 
     .search-form {
         #search-nav-field {
-            width: 100%;
+            width: 248px;
             box-sizing: border-box;
             border: none;
             border-radius: 50px;
