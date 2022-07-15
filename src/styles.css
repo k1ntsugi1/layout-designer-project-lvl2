@@ -177,6 +177,10 @@
   padding-top: 25px;
 }
 
+.pr-10 {
+  padding-right: 10px;
+}
+
 .pb-48 {
   padding-bottom: 48px;
 }
@@ -576,6 +580,7 @@ body {
   border: none;
   border-radius: 50px;
   background-color: #3C3B3D;
+  color: #FFFFFF;
 }
 
 #page-description .form-description {
@@ -646,8 +651,9 @@ body {
   line-height: 1em;
 }
 #page-pricing .cards-container .card-item .btn {
-  display: block;
   width: auto;
+  display: block;
+  color: #FFFFFF;
 }
 
 #page-news .news-container {
@@ -700,9 +706,10 @@ body {
 }
 #page-news .news-container .news-item .news-value .news-footer .btn {
   margin: 0;
-  align-self: flex-start;
   padding-top: 16px;
   padding-bottom: 16px;
+  align-self: flex-start;
+  color: #FFFFFF;
 }
 #page-news .news-container .second-news {
   flex-direction: row-reverse;

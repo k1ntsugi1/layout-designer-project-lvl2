@@ -107,6 +107,9 @@
 .pt-25 {
     @include indent-side(padding, 25, top);
 }
+.pr-10 {
+    @include indent-side(padding, 10, right);
+}
 .pb-48 {
     @include indent-side(padding, 48, bottom);
 }
