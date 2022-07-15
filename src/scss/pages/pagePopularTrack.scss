@@ -1,9 +1,5 @@
 #page-popular-track {
     .track-main-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
         column-gap: 50px;
         row-gap: 25px;
         .track-container {
@@ -23,12 +19,27 @@
                     align-self: center;
                     flex-grow: 10;
                 }
+                .image-play-container {
+                    .img-play {
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                      
+                    }
+                }
             }
             .track-item:hover,
             .track-item:focus,
             .track-item:active {
-                top: -5px;
-                left: -5px;
+                top: -10px;
+                left: -10px;
+                box-shadow: 10px 10px 30px 1px $color-blue;
+            }
+            .track-item:hover .img-play,
+            .track-item:focus .img-play,
+            .track-item:active .img-play {
+                z-index: 10;
             }
         }
     }

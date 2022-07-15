@@ -4,9 +4,6 @@
     padding-bottom: 2rem;
     border-bottom: 1px solid $color-dark;
     .info-footer {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         border-bottom: 2px solid $color-grey;
 
         .footer-item {
@@ -18,20 +15,12 @@
             .link {
                 text-transform: none;
             }
-            .social-link {
-                text-decoration: none;
-            }
         }
     }
     .additional-info {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        gap: 16px;
         .additional-info-item {
-            margin-right: 16px;
             text-transform: none;
-            font-size: 16px;
         }
     }
 
