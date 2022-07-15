@@ -12,15 +12,23 @@
             gap: 25px;
             flex-grow: 1;
             .track-item {
+                position: relative;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 gap: 20px;
                 flex-grow: 1;
+                cursor: pointer;
                 .track-description {
                     align-self: center;
                     flex-grow: 10;
                 }
+            }
+            .track-item:hover,
+            .track-item:focus,
+            .track-item:active {
+                top: -5px;
+                left: -5px;
             }
         }
     }

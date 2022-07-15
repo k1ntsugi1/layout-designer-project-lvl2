@@ -8,6 +8,9 @@
             font-size: 11px;
             line-height: 16px;
         }
+        .active {
+            color: $color-white;
+        }
         .logo-container {
             position: relative;
             white-space: nowrap;

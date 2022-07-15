@@ -1,6 +1,6 @@
 $breakpoints: (
     large: 2000px,
-    medium: 1000px,
+    medium: 1050px,
     small: 610px,
 );
 
@@ -197,17 +197,5 @@ $headline-text-transform: uppercase;
         .additional-info {
             flex-direction: column;
         }
-    }
-
-    #page-pricing,
-    #page-news,
-    #page-app,
-    #page-footer,
-    #page-popular-track,
-    #page-discography {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
