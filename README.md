@@ -6,3 +6,7 @@
 [**Main-page**](https://used-door.surge.sh/)
 
 [**Artist-page**](https://comfortable-wax.surge.sh/)
+
+#Задачи:
+- добавить описание в readme.md
+- на странице артиста "face-field" - кнопки и nav не реагируют на hover
